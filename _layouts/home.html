@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="vi-VN">
+
+<head>
+
+	{% include head.html %}
+
+	{% include head_styles.html %}
+
+	{% include schema_home.html %}
+
+	{% include fb_code.html %}
+
+</head>
+
+<body>
+
+	{% include after_open_body.html %}
+	
+	<!-- Wrapper -->
+    <div id="wrapper">
+
+
+		{% include header.html %}
+
+    	{% include slider.html %}
+
+		{{ content }}
+
+		{% include footer.html %}
+
+    </div>
+    <!-- end: Wrapper -->
+
+	{% include footer_script.html %}
+
+	{% include script.html %}
+
+
+</body>
+
+</html>

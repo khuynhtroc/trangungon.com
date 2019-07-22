@@ -1,0 +1,33 @@
+{% assign reviewRatings = site.data.mageplazaRatings[page.sku] %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "{{ page.title }}",
+  "image": [
+    "{{ page.image }}"
+   ],
+  "description": "{{ page.description }}",
+  "sku": "{{ page.sku }}",
+  "brand": {
+    "@type": "Thing",
+    "name": "Trà ngủ ngon"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ reviewRatings.rating }}",
+    "reviewCount": "{{ reviewRatings.count }}"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "VND",
+    "price": "{{ page.price }}",
+    "itemCondition": "http://schema.org/NewCondition",
+    "availability": "http://schema.org/InStock",
+    "seller": {
+      "@type": "Organization",
+      "name": "Tân Bình Chi"
+    }
+  }
+}
+</script>

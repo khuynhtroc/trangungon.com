@@ -1,0 +1,104 @@
+
+<!-- Sidebar-->
+<div class="sidebar col-md-3">
+    <div class="pinOnScroll affix-top" data-offset-bottom="800" style="position: inherit; top: auto;height: 1295px;">
+        <!--widget newsletter-->
+        <div class="widget widget-newsletter">
+
+            <form id="widget-search-form-sidebar" action="tim-kiem" method="get" class="form-inline">
+                <div class="input-group">
+                    <input type="text" aria-required="true" name="q" class="form-control widget-search-form" placeholder="Từ khóa tìm kiếm...">
+                    <span class="input-group-btn">
+					<button type="submit" id="widget-widget-search-form-button" class="btn btn-default"><i class="fa fa-search"></i></button>
+					</span>
+				</div>
+            </form>
+        </div>
+        <!--end: widget newsletter-->
+
+        <!--Tabs with Posts-->
+        <div class="widget">
+            <div id="tabs-01" class="tabs simple">
+                <ul class="tabs-navigation">
+                    <li class="active"><a href="#benh-mat-ngu">BỆNH MẤT NGỦ</a> </li>
+                    <li class=""><a href="#dieu-tri-mat-ngu">TRỊ MẤT NGỦ</a> </li>
+                    <li class=""><a href="#mat-ngu-sau-sinh">MẤT NGỦ SAU SINH</a> </li>
+                </ul>
+                <div class="tabs-content">
+                    <div class="tab-pane active" id="benh-mat-ngu">
+                        <div id="post-thumbnail-list">
+                            {% for post in site.categories.benh-mat-ngu limit:5 %}
+                            <div class="post-thumbnail-entry">
+                                <!--img src="{{ post.image }}" alt="{{ post.title }}"-->
+                                <div class="post-thumbnail-content">
+                                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                                    <span class="post-date"><i class="fa fa-clock-o"></i> {{ post.date | date_to_long_string }}</span>   
+                                    <!--span class="post-meta-category"><i class="fa fa-tag"></i> <a href="{{ site.url }}/{{ post.category }}">{{ post.category }}</a></span-->
+                                </div>    
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="dieu-tri-mat-ngu">
+                        <div id="post-thumbnail-list">
+                            {% for post in site.categories.dieu-tri-mat-ngu limit:5 %}
+                            <div class="post-thumbnail-entry">
+                                <!--img src="{{ post.image }}" alt="{{ post.title }}"-->
+                                <div class="post-thumbnail-content">
+                                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                                    <span class="post-date"><i class="fa fa-clock-o"></i> {{ post.date | date_to_long_string }}</span>   
+                                    <!--span class="post-meta-category"><i class="fa fa-tag"></i> <a href="{{ site.url }}/{{ post.category }}">{{ post.category }}</a></span-->
+                                </div>    
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="mat-ngu-sau-sinh">
+                        <div id="post-thumbnail-list">
+                            {% for post in site.categories.mat-ngu-sau-sinh limit:5 %}
+                            <div class="post-thumbnail-entry">
+                                <!--img src="{{ post.image }}" alt="{{ post.title }}"-->
+                                <div class="post-thumbnail-content">
+                                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                                    <span class="post-date"><i class="fa fa-clock-o"></i> {{ post.date | date_to_long_string }}</span>   
+                                    <!--span class="post-meta-category"><i class="fa fa-tag"></i> <a href="{{ site.url }}/{{ post.category }}">{{ post.category }}</a></span-->
+                                </div>    
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End: Tabs with Posts-->
+
+        <!--widget tags -->
+        <div class="widget  widget-tags">
+            <h4 class="widget-title">TỪ KHÓA</h4>
+            <div class="tags">
+                {% for tag in page.tags %}
+					<a href="{{ site.url }}/tim-kiem/?q={{ tag }}">{{ tag }}</a>
+				{% endfor %}
+            </div>
+        </div>
+        <!--end: widget tags -->
+
+        <div class="grid-item">
+            <!--Modal Box-->
+            <div class="widget text-center border-box">
+                <h3>CHUYÊN GIA TƯ VẤN</h3>
+                <p>Gửi cho chuyên gia và đội ngũ Dược Sĩ của chúng tôi các vấn đề bạn đang gặp phải!</p>
+
+                <!--Modal trigger button-->
+                <a href="#modalShop" data-lightbox="inline" class="btn btn-modal btn-shadow btn-rounded">TƯ VẤN NGAY</a>
+                <!--End: Modal trigger button-->
+
+        
+
+            </div>
+            <!--End: Modal Box-->
+        </div>
+
+    </div>
+</div>
+<!-- end: sidebar-->

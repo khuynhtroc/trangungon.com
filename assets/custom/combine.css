@@ -1,0 +1,195 @@
+.card.large .card-content,
+.card.medium .card-content,
+.card.small .card-content {
+	max-height: 40%;
+	overflow: hidden
+}
+
+.card .card-content {
+	padding: 20px;
+	border-radius: 0 0 2px 2px
+}
+
+.card .card-content p {
+	margin: 0;
+	color: inherit
+}
+
+.card .card-content .card-title {
+	line-height: 48px
+}
+
+.card .card-content .card-title {
+	line-height: 35px
+}
+
+.card-content ul,
+.card-content ul li {
+	list-style-type: square;
+	margin: 0 1em
+}
+
+.card .card-content p {
+	padding-top: 1em
+}
+
+.card.medium .card-content {
+	height: 135px
+}
+
+
+.hoverable {
+	transition: box-shadow .25s;
+	box-shadow: 0
+}
+
+.hoverable:hover {
+	transition: box-shadow .25s;
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19)
+}
+
+
+.card,
+.card-panel {
+	margin: .5rem 0 1rem;
+	background-color: #fff;
+	transition: box-shadow .25s;
+	border-radius: 2px
+}
+
+.card-panel {
+	padding: 20px
+}
+
+.card,
+.card-panel,
+z-depth-1 {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+}
+
+.grey.lighten-5 {
+	background-color: #fafafa !important
+}
+
+.valign-wrapper {
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.card .card-image img {
+	display: block;
+	border-radius: 2px 2px 0 0;
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%
+}
+
+.card .card-image .card-title {
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 20px
+}
+
+.card .card-content {
+	padding: 20px;
+	border-radius: 0 0 2px 2px
+}
+
+.card .card-content p {
+	margin: 0;
+	color: inherit
+}
+
+.card .card-content .card-title {
+	line-height: 48px
+}
+
+
+.chip img {
+	float: left;
+	margin: 0 8px 0 -12px;
+	height: 32px;
+	width: 32px;
+	border-radius: 50%
+}
+
+.chip i.material-icons {
+	cursor: pointer;
+	float: right;
+	font-size: 16px;
+	line-height: 32px;
+	padding-left: 8px
+}
+
+.materialboxed {
+	display: block;
+	cursor: -webkit-zoom-in;
+	cursor: zoom-in;
+	position: relative;
+	transition: opacity .4s
+}
+
+.materialboxed:hover {
+	will-change: left, top, width, height
+}
+
+.materialboxed:hover:not(.active) {
+	opacity: .8
+}
+
+.materialboxed.active {
+	cursor: -webkit-zoom-out;
+	cursor: zoom-out
+}
+
+#materialbox-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #292929;
+	z-index: 999;
+	will-change: opacity
+}
+
+.materialbox-caption {
+	position: fixed;
+	display: none;
+	color: #fff;
+	line-height: 50px;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 0 15%;
+	height: 50px;
+	z-index: 1000;
+	-webkit-font-smoothing: antialiased
+}
+
+img.img-responsive {
+	width: 100%
+}
+
+.blue-text {
+	color: #2196f3 !important
+}
+
+.black-text {
+	color: #000 !important
+}
+
+.grey-text {
+	color: #2f9bf3 !important
+}
+
+.circle {
+	border-radius: 50%
+}

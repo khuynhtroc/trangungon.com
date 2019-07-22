@@ -1,0 +1,119 @@
+/* 
+
+1. Add your custom Css styles below
+2. Place the this code in your template: 
+
+ <link href="css/custom.css" rel="stylesheet">
+
+*/
+
+.hit-the-floor {
+text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.hit-the-floor {
+  text-align: center;
+}
+
+.widget-title-custom, .cat-title {
+    text-align: left;
+    margin-bottom: 10px;
+    background-color: #fdc949;
+}
+.widget-title-custom custom, custom {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0286a8;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    line-height: 20px;
+}
+.widget-title-custom custom:after, .cat-title custom:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 20px solid #0286a8;
+    border-left: 20px solid #0286a8;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid transparent;
+    display: inline-block;
+    top: 0;
+    left: 100%;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.daimau {
+    background: linear-gradient(to bottom, #77bdec 0%, #addaf0 100%);
+}
+
+figure {
+    overflow: hidden;
+}
+figure:hover+span {
+    opacity: 1;
+}
+
+/* Shine */
+.anhnang figure {
+    position: relative;
+}
+.anhnang figure::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.anhnang figure:hover::before {
+    -webkit-animation: shine .75s;
+    animation: shine .75s;
+}
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+.vienanh {
+    -webkit-box-shadow: -5px 5px 5px #666;
+    border: solid 2px #fdc949;
+}
+
+
+.cardcustom {
+  background: #fdc849;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+}
+
+.card-custom {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-custom:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+

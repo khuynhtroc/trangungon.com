@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="vi-VN">
+
+	<head>
+	
+		{% include head.html %}
+
+		{% include head_styles.html %}
+
+		<!-- Structured data Schema -->
+		{% include schema_product.html %}
+
+		{% include fb_code.html %}
+	
+	</head>
+	
+	<body>
+	
+		{% include after_open_body.html %}
+		
+		<!-- Wrapper -->
+	    <div id="wrapper">
+	
+			{% include header_landingpage.html %}
+	
+			{{ content }}
+	
+			{% include footer.html %}
+	
+	    </div>
+	    <!-- end: Wrapper -->
+	
+		{% include footer_script.html %}
+	
+		{% include script_landing.html %}
+	
+	
+	</body>
+
+</html>
